@@ -36,7 +36,7 @@ class SignUpPage {
         this.lastNameField.type(lastName);
         this.emailField.type(email);
         this.passwordField.type(password);
-        this.confirmPasswordField.type(password); // Assuming password confirmation is required
+        this.confirmPasswordField.type(password); 
     }
 
     submit() {
