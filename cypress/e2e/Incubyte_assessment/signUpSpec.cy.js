@@ -2,7 +2,7 @@ import SignUpPage from '../../support/pageobject/signUpPage'
 describe('Magento Sign Up Tests', () => {
 
     it('should sign up with valid details', () => {
-        const uniqueEmail = `user${Date.now()}@example.com`;
+        const uniqueEmail = `user${Math.random() * 10}@example.com`;
 
         SignUpPage.visit();
         SignUpPage.fillInDetails('Shubhangi', 'Kalbande', uniqueEmail, 'Shubhangi@1988');
